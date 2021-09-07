@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+    font-family: Montserrat,sans-serif;
+    background: #383838;
+    width: 100vw;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+/* video */
+.video-container video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: brightness(60%);
+    z-index: -2;
+}
+
+/* glassmorphism */
+.glassmorph {
+    background: rgba(239, 208, 241, 0.3);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.18);
+}
+
+/* global */
+.global-container{
+    position: relative;
+    min-height: 100vh;
+    min-width:100vw;
+}
+
+/* searching bar */
+.searchingbar{
+    display:flex;
+    margin-top: 10px;
+    padding:14px;
+    flex-direction: row;
+    justify-content: center;
+}
+.searchingbar .input input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    /* text-transform: uppercase; */
+    padding: 1px 2px;
+    
+}
+.searchingbar .input input:hover{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+}
+.searchingbar .searchbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.searchingbar .searchbtn button{
+    width:50px;
+    font-size: 30px;
+    margin-left: 10px;
+    height: 54px;
+    border-radius: 12px;
+    color: whitesmoke;;
+}
+.searchbtn i{
+    color: black;
+}
+.other.description{
+  width:1%;
+}
+/* container glassmorph */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    position: relative;
+    margin: 20px auto;
+}
+
+
+/* maindata */
+.maindata{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;   
+}
+.icon-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+}
+.icon-container img{
+    width: 150px;
+    height: 150px;
+}
+.fas .fa-sun{
+    font-weight: 900;
+}
+.main{
+    font-size: 5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.descriptionweather{
+    font-size:1.5rem ;
+    text-align: center;
+    text-transform: lowercase;
+}
+.temprature{
+    margin-top:2rem;
+    font-size: 2rem;
+    font-weight: 80;
+    text-align: center;
+}
+.temprature span{
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+
+/* other */
+.other{
+    margin-top:3rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem 0 0;
+    border-top:1px solid whitesmoke;
+    font-size: 1.3rem;
+}
+
+
+
+/* ---------------------------------------- */
+
+@media screen and (max-width:870px) {
+   .global-container{
+       margin:10px;
+       display:flex;
+       flex-flow: wrap;
+   }
+   .searchingbar{
+       display:flexbox;
+       flex-flow:wrap;
+       justify-content: center;
+       align-items: center;
+       flex-flow:wrap;
+
+   }
+}
+@media screen and (max-width:750px) {
+   /* .other{
+       display: flexbox;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+   } */
+   .other div{
+       display: flex;
+       height: 20px;
+       flex-direction: column;
+       flex-flow: wrap;
+   }
+}
+@media screen and (max-width:724px) {
+   .maindata{
+       display: flexbox;
+       flex-direction: column;
+       text-align: center;
+       justify-content: space-evenly;
+   }
+}
+@media screen and (max-width:500px) {
+    .searchingbar{
+        display: flex;
+        flex-direction: row;
+    }
+   .maindata{
+       display: flexbox;
+       flex-direction: column;
+       text-align: center;
+       justify-content: space-evenly;
+   }
+   .other{
+       height: 200px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       padding:25px;
+       margin:10px ;
+   }
+}
+
+
