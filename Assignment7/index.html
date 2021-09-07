@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Weather!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='shortcut icon' href='Images/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="app">
+        <div class="video-container">
+            <video autoplay loop muted><source src="Video/video.mp4" type="video/mp4" ></video>
+        </div>
+        <div class="global-container ">
+
+            <div class="searchingbar">
+                <div class="input glassmorph"><input type="text" placeholder="Search Location..." id="cityname"></div>
+                <div class="searchbtn"> 
+                    <button ><i class="fas fa-search-location"></i></button>
+                </div>
+            </div>
+
+            <div class="container glassmorph">
+
+                <div class="maindata">
+                    <div class="icon-container">
+                        <img src="Images/weather.png">
+                    </div>
+                    <div class="info">
+                        <div class="main">Main </div>
+                        <div class="descriptionweather">Description</div>
+                        <div class="temprature">
+                            <span>X</span>&#176C
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="other">
+                    <div class="minmaxtemp">
+                         <i class="fas fa-temperature-low"></i> <span>(MIN)min/max(MAX)  </span>
+                    </div>
+                    <div class="distance">
+                        <i class="fas fa-grin-beam-sweat"></i><span> Humidity - z </span>
+                    </div>
+                    <div class="description">
+                        <i class="far fa-smile"></i> <span> Positive Vibes!</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+          
+
+        </div>
+    </div>
+    
+
+<script src="app.js"></script>
+</body>
+</html>
